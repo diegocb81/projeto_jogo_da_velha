@@ -199,5 +199,22 @@ function checkWinCondition() {
         console.log('Deu velha!');
     }
 
+}
 
+// Limpa o jogo, declara o vencedor e atualiza o placar
+function declareWinner(winner) {
+    
+    let scoreboardX = document.querySelector("#scoreboard-1");
+    let scoreboardY = document.querySelector("#scoreboard-2");
+    let msg = '';
+
+    if (winner == 'x') {
+        scoreboardX.textContent = pasertInt(scoreboardX.textContent) + 1;
+        msg = "O jogador 1 venceu!";
+    } else if (winner == 'y') {
+        scoreboardY.textContent = pasertInt(scoreboardY.textContent) + 1;
+        msg = "O jogador 2 venceu!";
+    } else {
+        msg = "Deu velha!";
+    }
 }
