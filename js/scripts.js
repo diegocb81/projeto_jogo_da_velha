@@ -30,6 +30,16 @@ for(let i = 0; i < boxes.length; i++){
             // Computar jogada
             if (player1 == player2) {
                 player1++;
+
+                if (secondPlayer == 'ai-player') {
+                    
+                    // Função para executar a jogada
+                    computerPlay();
+
+                    player2++;
+
+                }
+
             } else {
                 player2++;
             }
@@ -41,6 +51,26 @@ for(let i = 0; i < boxes.length; i++){
 
     });
     
+}
+
+// Evento para saber se é 2 players ou IA
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+
+        secondPlayer = this.getAttribute("id");
+
+        for (let j = 0; j < buttons.length; j++) {
+            buttons[j].style.display = 'none';
+        }
+
+        setTimeout(function() {
+            
+            let container = document.querySelector("#container");
+            container.classList.remove("hide");
+
+        }, 500);
+
+    });
 }
 
 // Ver quem vai jogar
@@ -240,3 +270,5 @@ function declareWinner(winner) {
     }
 
 }
+
+// executar a lógica da jogada do CPU
