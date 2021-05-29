@@ -5,16 +5,17 @@ body {
 
 h1 {
     font-size: 42px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Botões */
 
 #buttons-container button {
     border: none;
-    padding: 10px 15px;
+    padding: 15px 15px;
     margin: 0 10px;
+    margin-bottom: 20px;
 }
 
 /* Jogo */
@@ -81,7 +82,7 @@ h1 {
 /* Placar */
 
 h2{
-    margin-top: -5px;
+    margin-top: 5px;
     margin-bottom: 15px;
 }
 
