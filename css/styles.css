@@ -12,10 +12,12 @@ h1 {
 /* Botões */
 
 #buttons-container button {
-    border: none;
+    border: 2px solid black;
     padding: 15px 15px;
     margin: 0 10px;
     margin-bottom: 20px;
+    background-color: #76ff03;
+    border-radius: 10px;
 }
 
 /* Jogo */
@@ -57,14 +59,14 @@ h1 {
 
 /* Símbolos */
 
-.x{
+.x {
     font-size: 85px;
     color: red;
     display: inline-block;
     line-height: 100px;
 }
 
-.o{
+.o {
     width: 50px;
     height: 50px;
     border: 5px solid green;
@@ -75,18 +77,18 @@ h1 {
 
 /* Classe de esconder */
 
-.hide{
+.hide {
     display: none !important;
 }
 
 /* Placar */
 
-h2{
+h2 {
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
-#scoreboard-container{
+#scoreboard-container {
     font-weight: bold;
     margin-top: 30px;
     font-size: 25px;
@@ -95,17 +97,17 @@ h2{
     margin-right: auto;
 }
 
-.score-box{
+.score-box {
     margin: 0 20px;
 }
 
-#x-scoreboard{
+#x-scoreboard {
     color: red;
     margin-right: 3px;
     margin-top: 5px;
 }
 
-#o-scoreboard{
+#o-scoreboard {
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -117,7 +119,7 @@ h2{
 
 /* Mensagem de vitória */
 
-#message p{
+#message p {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
